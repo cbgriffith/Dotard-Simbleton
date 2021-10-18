@@ -4,7 +4,7 @@
  
  export const BusinessList = () => {
  
-     const contentElement = document.querySelector("#BusinessList")
+    //  const contentElement = document.querySelector("#BusinessList")
      const businesses = useBusiness()
  
      let businessHTMLRepresentations = ""
@@ -14,7 +14,7 @@
 
      }
  
-     contentElement.innerHTML += `
+     document.querySelector("#BusinessList").innerHTML += `
          <article class="businessList">
              ${businessHTMLRepresentations}
          </article>
